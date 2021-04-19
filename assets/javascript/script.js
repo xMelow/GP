@@ -1,24 +1,18 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', init)
+document.addEventListener("DOMContentLoaded", init)
 
 function init(){
-    document.querySelector("#submitInput").addEventListener("click", othername)
-}
+    document.getElementById("plsWork").addEventListener("click", showInput);
+} 
 
+let leerkrachten = [];
 
-//clear list of leerkrachten die afwezig zijn
-
-//add leerkracht
-
-//remove leerkracht
-
-//show leerkrachten
-
-function othername(e){
-    e.preventDefault();
-    let input = document.querySelector("#userInput").value;
-    alert(input)
+function showInput(){
+    
+    let variable = document.getElementById('inputId').value;
+    leerkrachten.push(variable)
+    document.getElementById('leerkrachten').innerHTML = 'De afwezige leerkrachten zijn: ' + leerkrachten;
 }
 
 
@@ -29,6 +23,14 @@ function othername(e){
 
 
 
+
+
+
+
+
+
+
+/* 
 function currentTime(){
 
     let date = new Date();
@@ -57,3 +59,4 @@ function updateTime(k){
 }
 
 currentTime();
+ */
