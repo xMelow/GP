@@ -1,5 +1,34 @@
 "use strict";
 
+document.addEventListener('DOMContentLoaded', init)
+
+function init(){
+    document.querySelector("#submitInput").addEventListener("click", othername)
+}
+
+
+//clear list of leerkrachten die afwezig zijn
+
+//add leerkracht
+
+//remove leerkracht
+
+//show leerkrachten
+
+function othername(e){
+    e.preventDefault();
+    let input = document.querySelector("#userInput").value;
+    alert(input)
+}
+
+
+
+
+
+
+
+
+
 function currentTime(){
 
     let date = new Date();
